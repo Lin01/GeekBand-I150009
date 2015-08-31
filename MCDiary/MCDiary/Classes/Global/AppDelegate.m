@@ -7,16 +7,23 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MCDMyPetDataModel.h"
+#import "MCDMyPetViewController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+{
+    MCDMyPetDataModel *_myPetDataModel;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    _myPetDataModel = [[MCDMyPetDataModel alloc] init];
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    MCDMyPetViewController *controller = navigationController.viewControllers[0];
+    controller.myPetDataModel = _myPetDataModel;
     return YES;
 }
 

@@ -21,6 +21,11 @@
 		D71577F696CD8ED662984D2B /* MCDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D715773D8BDB93D276EA4A82 /* MCDBaseViewController.m */; };
 		D71579BE1F2F31890DCC528E /* MCDBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7157CE093D65BDB579120AD /* MCDBaseViewModel.m */; };
 		D7157C2FED09661163DE707C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7157888BFE956975F919221 /* AppDelegate.m */; };
+		DA4009FD1B900545002F576A /* MCDDetailPetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4009FA1B900545002F576A /* MCDDetailPetViewController.m */; };
+		DA4009FE1B900545002F576A /* MCDMyPetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4009FC1B900545002F576A /* MCDMyPetViewController.m */; };
+		DA400A041B900DF6002F576A /* MCDMyPet.m in Sources */ = {isa = PBXBuildFile; fileRef = DA400A011B900DF6002F576A /* MCDMyPet.m */; };
+		DA400A081B92E610002F576A /* MCDMyPetDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA400A071B92E610002F576A /* MCDMyPetDataModel.m */; };
+		DA400A0B1B93250C002F576A /* MCDCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA400A0A1B93250C002F576A /* MCDCustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,16 @@
 		D7157D091202401A4C5895D8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7157D737AA85AC4E15D00E1 /* MCDBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDBaseViewModel.h; sourceTree = "<group>"; };
 		D7157F8AF21E4552000AB895 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
+		DA4009F91B900545002F576A /* MCDDetailPetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCDDetailPetViewController.h; path = MyPet/MCDDetailPetViewController.h; sourceTree = "<group>"; };
+		DA4009FA1B900545002F576A /* MCDDetailPetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCDDetailPetViewController.m; path = MyPet/MCDDetailPetViewController.m; sourceTree = "<group>"; };
+		DA4009FB1B900545002F576A /* MCDMyPetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCDMyPetViewController.h; path = MyPet/MCDMyPetViewController.h; sourceTree = "<group>"; };
+		DA4009FC1B900545002F576A /* MCDMyPetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCDMyPetViewController.m; path = MyPet/MCDMyPetViewController.m; sourceTree = "<group>"; };
+		DA400A001B900DF6002F576A /* MCDMyPet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCDMyPet.h; path = MyPet/MCDMyPet.h; sourceTree = "<group>"; };
+		DA400A011B900DF6002F576A /* MCDMyPet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCDMyPet.m; path = MyPet/MCDMyPet.m; sourceTree = "<group>"; };
+		DA400A061B92E610002F576A /* MCDMyPetDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDMyPetDataModel.h; sourceTree = "<group>"; };
+		DA400A071B92E610002F576A /* MCDMyPetDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDMyPetDataModel.m; sourceTree = "<group>"; };
+		DA400A091B93250C002F576A /* MCDCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDCustomCell.h; sourceTree = "<group>"; };
+		DA400A0A1B93250C002F576A /* MCDCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDCustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +239,7 @@
 		D7157B8A08D8F47B13A60E4A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DA4009F81B9002C9002F576A /* MyPet */,
 				D7157759040A99FEE3E85DB7 /* Home */,
 				D7157F30A59A548E3BEE45AD /* Base */,
 			);
@@ -242,6 +258,7 @@
 		D7157DB86FCFA53F7E37365E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DA4009FF1B900DE5002F576A /* MyPet */,
 				D7157F8AF21E4552000AB895 /* README.md */,
 			);
 			path = Models;
@@ -263,6 +280,30 @@
 				D7157C7390DB2C2C0EA3D6E7 /* MCDBaseViewController.h */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		DA4009F81B9002C9002F576A /* MyPet */ = {
+			isa = PBXGroup;
+			children = (
+				DA4009F91B900545002F576A /* MCDDetailPetViewController.h */,
+				DA4009FA1B900545002F576A /* MCDDetailPetViewController.m */,
+				DA4009FB1B900545002F576A /* MCDMyPetViewController.h */,
+				DA4009FC1B900545002F576A /* MCDMyPetViewController.m */,
+				DA400A091B93250C002F576A /* MCDCustomCell.h */,
+				DA400A0A1B93250C002F576A /* MCDCustomCell.m */,
+			);
+			name = MyPet;
+			sourceTree = "<group>";
+		};
+		DA4009FF1B900DE5002F576A /* MyPet */ = {
+			isa = PBXGroup;
+			children = (
+				DA400A001B900DF6002F576A /* MCDMyPet.h */,
+				DA400A011B900DF6002F576A /* MCDMyPet.m */,
+				DA400A061B92E610002F576A /* MCDMyPetDataModel.h */,
+				DA400A071B92E610002F576A /* MCDMyPetDataModel.m */,
+			);
+			name = MyPet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,12 +444,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA400A0B1B93250C002F576A /* MCDCustomCell.m in Sources */,
 				D7157C2FED09661163DE707C /* AppDelegate.m in Sources */,
 				D71574C4F692FF5A2D8B9292 /* main.m in Sources */,
 				D715748D8283647564751954 /* MCDHomeViewController.m in Sources */,
+				DA400A081B92E610002F576A /* MCDMyPetDataModel.m in Sources */,
+				DA4009FD1B900545002F576A /* MCDDetailPetViewController.m in Sources */,
 				D71571CA5B657173B1229A1A /* MCDHomeViewModel.m in Sources */,
 				D71579BE1F2F31890DCC528E /* MCDBaseViewModel.m in Sources */,
+				DA400A041B900DF6002F576A /* MCDMyPet.m in Sources */,
 				D71577F696CD8ED662984D2B /* MCDBaseViewController.m in Sources */,
+				DA4009FE1B900545002F576A /* MCDMyPetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
